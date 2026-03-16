@@ -1,10 +1,7 @@
 import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
+import { KmaVilageFcstModule } from './modules/kma-vilage-fcst/kma-vilage-fcst.module';
 
 @Module({
-  imports: [],
-  controllers: [AppController],
-  providers: [AppService],
+  imports: [KmaVilageFcstModule],
 })
 export class AppModule {}
